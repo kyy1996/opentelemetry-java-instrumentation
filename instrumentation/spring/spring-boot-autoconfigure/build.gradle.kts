@@ -52,6 +52,8 @@ dependencies {
   implementation(project(":instrumentation:logback:logback-appender-1.0:library"))
   compileOnly("ch.qos.logback:logback-classic:1.0.0")
   implementation(project(":instrumentation:jdbc:library"))
+  implementation(project(":instrumentation:elasticsearch:elasticsearch-rest-7.0:library"))
+  compileOnly("org.elasticsearch.client:elasticsearch-rest-high-level-client:7.0.0")
 
   library("org.springframework.kafka:spring-kafka:2.9.0")
   library("org.springframework.boot:spring-boot-starter-actuator:$springBootVersion")
